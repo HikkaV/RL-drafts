@@ -6,4 +6,7 @@ The repository related to the useful courses and link regarding Reinforcement Le
 4) UCU 2020 RL lectures : https://www.youtube.com/watch?v=ETpHy-eFG_k
 5) Deep learning with RL course (cs285 from Berkely) : https://www.youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A
 6) Standford RL course (cs234) : https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u
+
 Before going out to real RL projects we should deal with all the highlighted stuff.
+
+We should also save our progress in terms of RL code here, or attach our repos with existing RL code.
