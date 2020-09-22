@@ -1,0 +1,8 @@
+jupyter
+gym
+pandas
+numpy
+matplotlib
+seaborn
+tqdm
+joblib
