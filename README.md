@@ -1,5 +1,5 @@
 # RL-materials
-The repository related to the useful courses and link regarding Reinforcement Learning, that should be visited and viewed.
+The repository related to the useful courses and links regarding Reinforcement Learning, that should be visited and viewed.
 1) Specialization related to RL : https://www.coursera.org/specializations/reinforcement-learning
 2) Advanced course related to RL : https://www.coursera.org/learn/practical-rl?
 3) Book related to RL : https://d3c33hcgiwev3.cloudfront.net/Ph9QFZnEEemRfw7JJ0OZYA_808e8e7d9a544e1eb31ad11069d45dc4_RLbook2018.pdf?Expires=1598745600&Signature=EB2ZRyquh1GrNGkoNcjN~u4u3Fz3xq-RqB0mDg2EP0~AaNqLLZsA2LBM72nIZjIWPvkVEX0iI7SXff~5FZV0lyiZtRljVW4UbnuRn9z4OjXPRBXzF~sZQUabUcfzDlYo20War65PugTdHCY8ZwZLx9UmczKIyYMcs4dHFa6txzg_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A
