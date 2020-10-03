@@ -32,3 +32,10 @@ class BreakoutPreprocess(ObservationWrapper):
         img = self._scale(img)
         img = img.reshape(self.img_size)
         return img
+
+class InvadersPreprocess(BreakoutPreprocess):
+    def __init__(self, env):
+        BreakoutPreprocess.__init__(self, env)
+
+    def _crop_irrelevant(self, image):
+        return image[20:-10, :, :]
