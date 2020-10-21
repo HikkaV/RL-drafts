@@ -5,11 +5,11 @@ import cv2
 
 
 class BreakoutPreprocess(ObservationWrapper):
-    def __init__(self, env):
+    def __init__(self, env, img_size=(64, 64, 1)):
         """A gym wrapper that crops, scales image into the desired shapes and optionally grayscales it."""
         ObservationWrapper.__init__(self, env)
 
-        self.img_size = (64, 64, 1)
+        self.img_size = img_size
         self.observation_space = Box(0.0, 1.0, self.img_size)
 
     def _to_gray_scale(self, rgb_image, weights=[0.7, 0.3, 0.2]):
@@ -34,8 +34,15 @@ class BreakoutPreprocess(ObservationWrapper):
         return img
 
 class InvadersPreprocess(BreakoutPreprocess):
-    def __init__(self, env):
-        BreakoutPreprocess.__init__(self, env)
+    def __init__(self, env, img_size=(64, 64, 1)):
+        BreakoutPreprocess.__init__(self, env, img_size)
 
     def _crop_irrelevant(self, image):
         return image[20:-10, :, :]
+
+class KungFuPreprocess(BreakoutPreprocess):
+    def __init__(self, env, img_size=(64, 64, 3)):
+        BreakoutPreprocess.__init__(self, env, img_size)
+
+    def _crop_irrelevant(self, image):
+        return image[60:-30, 5:, :]
