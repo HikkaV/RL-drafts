@@ -1,9 +1,14 @@
 import numpy as np
+import joblib
+from copy import deepcopy
+
 
 class EnvBatch:
     def __init__(self, make_env_func, n_envs=10):
         """ Creates n_envs environments and babysits them for ya' """
+        self.n_envs = n_envs
         self.envs = [make_env_func() for _ in range(n_envs)]
+
 
     def reset(self):
         """ Reset all games and return [n_envs, *obs_shape] observations """
@@ -23,3 +28,4 @@ class EnvBatch:
                 new_obs[i] = self.envs[i].reset()
 
         return new_obs, rewards, done, infos
+
